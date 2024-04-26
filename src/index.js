@@ -23,6 +23,7 @@ function generateFact(event) {
   let factElement = document.querySelector("#fact");
   factElement.classList.remove("hidden");
   factElement.innerHTML = `<div class="loader"></div>`;
+
   axios.get(apiUrl).then(displayFact);
 }
 

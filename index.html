@@ -25,19 +25,19 @@
         <form id="generator-form">
           <input
             type="text"
-            placeholder="Enter topic of a fun fact..."
+            placeholder="Enter a topic for a fun fact"
             autofocus
             required
             class="instructions"
             id="user-instructions"
           />
-          <input type="submit" class="submit-button" />
+          <input type="submit" value="Generate" class="submit-button" />
         </form>
         <div class="hint">i.e: Pets, Food, Culture</div>
-        <div class="fact hidden" id="fact"></div>
+        <div class="fact hidden" id="fact"><span class="loading"></span></div>
       </main>
       <footer>
-        This project was coded by
+        Coded with <span class="emoji">🤍</span> by
         <a href="https://github.com/Afishnet" target="_blank">Anet Jakesova</a>
         and is
         <a href="https://github.com/Afishnet?tab=repositories" target="_blank">
@@ -47,7 +47,7 @@
         <a
           href="https://app.netlify.com/teams/afishnet/overview"
           target="_blank"
-          >hosted on Netlify</a
+          >hosted on Netlify.</a
         >
       </footer>
     </div>

@@ -3,16 +3,16 @@ body {
   font-family: "Inter", sans-serif;
   color: #ffffff;
 }
-
-a {
-  color: #7cd7c6;
-}
 h1 {
   text-align: center;
   color: #61bdaf;
   font-size: 40px;
+  transition: all 150ms ease-in-out;
+  cursor: default;
 }
-
+h1:hover {
+  color: #a2e6dc;
+}
 .container {
   background-color: #30315d;
   border-radius: 10px;
@@ -23,8 +23,12 @@ h1 {
 .emoji {
   font-family: "Noto Emoji", sans-serif;
   color: #a278b7;
+  transition: all 150ms ease-in-out;
 }
-
+.emoji:hover {
+  color: #e0bdf3;
+  cursor: default;
+}
 form {
   padding: 0px 30px 0px 30px;
   border-radius: 10px;
@@ -34,11 +38,9 @@ form {
 .hint {
   opacity: 0.6;
   font-size: 13px;
-  margin-top: 0px;
-  margin-left: 35px;
+  margin: 0px 35px 20px 35px;
   color: #61bdaf;
 }
-
 .instructions {
   padding: 15px;
   background-color: white;
@@ -49,7 +51,6 @@ form {
   border-radius: 10px;
   color: #191834;
 }
-
 .submit-button {
   margin-left: 10px;
   background: #61bdaf;
@@ -60,25 +61,25 @@ form {
   font-size: 16px;
   border-radius: 10px;
   padding: 14px 24px;
+  cursor: pointer;
+  transition: all 150ms ease-in-out;
+}
+.submit-button:active {
+  background-color: #a2e6dc;
+  transform: translateY(2px);
 }
 .hidden {
   display: none;
 }
 .fact {
   font-size: 16px;
-  padding-left: 10px;
-  line-height: 2;
+  padding-left: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin: 15px 20px 10px 20px;
   border-left: 2px solid #61bdaf;
-  margin: 20px 30px 10px 30px;
+  line-height: 2;
 }
-
-footer {
-  text-align: center;
-  font-size: 12px;
-  margin: 50px 30px 10px 30px;
-  color: #467893;
-}
-
 .loader {
   color: #a278b7;
   width: 4px;
@@ -87,8 +88,8 @@ footer {
   box-shadow: 19px 0 0 7px, 38px 0 0 3px, 57px 0 0 0;
   transform: translateX(-38px);
   animation: l21 0.5s infinite alternate linear;
-  margin-left: 70px;
-  margin-top: 50px;
+  margin-left: 35px;
+  margin-top: 5px;
 }
 
 @keyframes l21 {
@@ -98,4 +99,22 @@ footer {
   100% {
     box-shadow: 19px 0 0 0, 38px 0 0 3px, 57px 0 0 7px;
   }
+}
+
+a {
+  color: #467893;
+  text-decoration: none;
+  transition: all 150ms ease-in-out;
+}
+a:hover {
+  color: #7cd7c6;
+  text-decoration: none;
+}
+footer {
+  text-align: center;
+  font-size: 12px;
+  margin: 50px 30px 10px 30px;
+  color: #467893;
+  border-top: 1px solid #191834;
+  padding-top: 10px;
 }
