@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Noto+Emoji:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+    <title>AI Fun Fact Generator</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>AI Fun Fact Generator<span class="emoji"> 🤖</span></h1>
+      </header>
+      <main>
+        <form id="generator-form">
+          <input
+            type="text"
+            placeholder="Enter topic of a fun fact..."
+            autofocus
+            required
+            class="instructions"
+            id="user-instructions"
+          />
+          <input type="submit" class="submit-button" />
+        </form>
+        <div class="hint">i.e: Pets, Food, Culture</div>
+        <div class="fact hidden" id="fact"></div>
+      </main>
+      <footer>
+        This project was coded by
+        <a href="https://github.com/Afishnet" target="_blank">Anet Jakesova</a>
+        and is
+        <a href="https://github.com/Afishnet?tab=repositories" target="_blank">
+          open-sourced on GitHub</a
+        >
+        and
+        <a
+          href="https://app.netlify.com/teams/afishnet/overview"
+          target="_blank"
+          >hosted on Netlify</a
+        >
+      </footer>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
